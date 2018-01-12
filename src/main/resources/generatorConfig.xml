@@ -7,8 +7,12 @@
 	<classPathEntry
 		location="/media/angi/Resource/Maven-Repo/mysql/mysql-connector-java/5.1.45/mysql-connector-java-5.1.45.jar" />
 
-	<context id="mysqlTables" defaultModelType="flat"
-		targetRuntime="MyBatis3">
+	<context id="mysqlTables" defaultModelType="flat">
+		<commentGenerator>
+			<property name="suppressDate" value="true" />
+			<property name="addRemarkComments" value="true"/>
+		</commentGenerator>
+		
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
 			connectionURL="jdbc:mysql://localhost:3306/test" userId="root"
 			password="mysql">
@@ -32,7 +36,7 @@
 		</javaClientGenerator>
 
 		<table tableName="city">
-			<generatedKey column="id" sqlStatement="MySql" identity="true"/>
+			<generatedKey column="id" sqlStatement="MySql" identity="true" />
 		</table>
 	</context>
 </generatorConfiguration>
