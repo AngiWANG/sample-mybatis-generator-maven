@@ -18,10 +18,6 @@
 			password="mysql">
 		</jdbcConnection>
 
-		<javaTypeResolver>
-			<property name="forceBigDecimals" value="false" />
-		</javaTypeResolver>
-
 		<javaModelGenerator targetPackage="wang.angi.sample.mybatis.generator.maven.model"
 			targetProject="src/main/java">
 		</javaModelGenerator>
