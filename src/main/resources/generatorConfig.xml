@@ -4,10 +4,7 @@
   "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
-	<classPathEntry
-		location="/media/angi/Resource/Maven-Repo/mysql/mysql-connector-java/5.1.45/mysql-connector-java-5.1.45.jar" />
-
-	<context id="mysqlTables" defaultModelType="flat">
+	<context id="mysqlTables" defaultModelType="flat" targetRuntime="MyBatis3DynamicSql">
 		<commentGenerator>
 			<property name="suppressDate" value="true" />
 			<property name="addRemarkComments" value="true"/>
